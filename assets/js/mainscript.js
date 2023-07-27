@@ -1,8 +1,9 @@
-const loader = document.getElementById('loader');
+    const loader = document.getElementById('loader');
+    const res = document.getElementById('res');
     // Fitness Workout Planner
     document.getElementById('workoutForm').addEventListener('submit', async function (event) {
       event.preventDefault();
-      
+
       loader.style.display = 'block';
       const time = document.getElementById('time').value;
       const muscle = document.getElementById('muscle').value;
@@ -21,6 +22,7 @@ const loader = document.getElementById('loader');
       try {
         const response = await fetch(url, options);
         const data = await response.json();
+        res.style.display = 'block'
         loader.style.display = 'none';
 
         const warmUpTable = document.getElementById('warmUpTable');
@@ -40,7 +42,7 @@ const loader = document.getElementById('loader');
         const exercisesTable = document.getElementById('exercisesTable');
         exercisesTable.innerHTML = `
           <tr>
-            <th>Exercise</th>
+            <th>Exercise Per Sets</th>
             <th>Sets</th>
             <th>Reps</th>
           </tr>
@@ -56,7 +58,7 @@ const loader = document.getElementById('loader');
         const coolDownTable = document.getElementById('coolDownTable');
         coolDownTable.innerHTML = `
           <tr>
-            <th>Exercise</th>
+            <th>Pre-Exercise</th>
             <th>Time</th>
           </tr>
           ${data['Cool Down'].map(item => `
@@ -111,7 +113,9 @@ const loader = document.getElementById('loader');
       try {
         const response = await fetch(url, options);
         const result = await response.json();
+        res.style.display = 'block'
         displayBMIResult(result);
+        loader.style.display = 'none'; 
       } catch (error) {
         console.error(error);
         alert('An error occurred while fetching data. Please try again later.');
@@ -128,7 +132,6 @@ const loader = document.getElementById('loader');
       const bmiCategoryElement = document.getElementById('bmiCategory');
 
       bmiValueElement.textContent = bmiValue;
-      bmiValueElement.style.textAlign = "center";
-
       bmiResultSection.style.display = 'block';
+      bmiResultSection.style.textAlign = 'center';
     }
