@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet');
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Landing page container styles */
+.landing-page {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden; /* Prevent vertical scroll */
+    background: url('../images/landing.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+/* Moving title animation styles */
+.moving-title-container {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap; /* Prevent text from wrapping */
+    font-size: 40px;
+    animation: slideLoop 6s linear infinite;
+}
+
+@keyframes slideLoop {
+    0% {
+        transform: translateX(-100%); /* Move to the left edge */
+    }
+    100% {
+        transform: translateX(100%); /* Move to the right edge */
+    }
+}
+
+/* Start button styles */
+.start-button {
+    padding: 15px 25px;
+    font-size: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 48%;
+    transition: background-color 0.3s;
+}
+
+.start-button:hover {
+    background-color: #0056b3;
+}
+
+/* Adjust the position of the button */
+#button{
+    margin-top: 35%;
+}
