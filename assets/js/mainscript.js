@@ -126,12 +126,31 @@
     function displayBMIResult(result) {
       const bmiValue = result.bmi.toFixed(2);
       const category = result.health;
-
+    
       const bmiResultSection = document.getElementById('bmiResult');
       const bmiValueElement = document.getElementById('bmiValue');
       const bmiCategoryElement = document.getElementById('bmiCategory');
-
+    
       bmiValueElement.textContent = bmiValue;
       bmiResultSection.style.display = 'block';
       bmiResultSection.style.textAlign = 'center';
+    
+      // Define BMI categories and their ranges
+      const categories = {
+        UNDERWEIGHT: { min: 0, max: 18.4 },
+        NORMAL: { min: 18.5, max: 24.9 },
+        OVERWEIGHT: { min: 25, max: 29.9 },
+        OBESE: { min: 30, max: Infinity },
+      };
+    
+      // Find the category based on the BMI value
+      let bmiCategory = 'Unknown';
+      for (const [categoryName, range] of Object.entries(categories)) {
+        if (bmiValue >= range.min && bmiValue <= range.max) {
+          bmiCategory = categoryName;
+          break;
+        }
+      }
+    
+      bmiCategoryElement.textContent = bmiCategory;
     }
