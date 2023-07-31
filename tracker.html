@@ -1,148 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FitnessPlus|FitnessTracker</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/tracker.css
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitnessPlus|FitnessTracker</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tracker.css
     ">
 </head>
+
 <body>
-    <!-- Navbar -->
-    <div class="navbar">
-        <div class="navbar-logo">FitnessPlus</div>
-        <ul class="navbar-menu">
-            <li><a href="home.html"><i class="material-icons">home</i> Home</a></li> <!-- Home link -->
-            <li><a href="#"><i class="material-icons">fitness_center</i> Fit Trackers</a></li> <!-- Fit Trackers link (current page) -->
-        </ul>
-    </div>
-    <div class="error-message" id="error-message"></div> <!------- For Appearing error message ------>
-    <div id="success-message" class="success-message"></div>  <!------- For Appearing Success message ------>
-    <div class="container">
-      <!-- Workout Plan Section -->
-      <div class="planner-form">
-        <h1 id="h1">Fitness Workout Planner</h1>
-        <form id="workoutForm">
-          <!-- Workout form content here -->
-          <label for="time">Time (in minutes):</label>
-          <input type="number" id="time" name="time" required>
-          <br>
-          <label for="muscle">Muscle:</label>
-          <select id="muscle" name="muscle" required>
-            <option value="">Select Muscle</option>
-            <option value="Chest">Chest</option>
-            <option value="Back">Back</option>
-            <option value="Legs">Legs</option>
-            <option value="Arms">Arms</option>
-            <!-- Add more options as needed -->
-          </select>
-          <br>
-          <label for="location">Location:</label>
-          <select id="location" name="location" required>
-            <option value="">Select Location</option>
-            <option value="Gym">Gym</option>
-            <option value="Home">Home</option>
-            <option value="Outdoors">Outdoors</option>
-            <option value="Fitness Center">Fitness Center</option>
-            <!-- Add more options as needed -->
-          </select>
-          <br>
-          <label for="equipment">Equipment:</label>
-          <select id="equipment" name="equipment" required>
-            <option value="">Select Equipment</option>
-            <option value="Dumbbells">Dumbbells</option>
-            <option value="Resistance Bands">Resistance Bands</option>
-            <option value="Treadmill">Treadmill</option>
-            <option value="Kettlebells">Kettlebells</option>
-            <option value="Jumping Rope">Jumping Rope</option>
-            <!-- Add more options as needed -->
-          </select>
-          <br>
-          <button type="submit">Get Workout Plan</button>
-        </form>
-      </div>
-  
-      <!-- BMI Calculator Section -->
-      <div class="bmi-calculator">
-        <h1>BMI Calculator</h1>
-        <form id="bmiForm">
-          <!-- BMI Calculator form content here -->
-          <div>
-            <label for="age">Age:</label>
-            <input type="number" id="age" min="1" required>
-          </div>
-          <div>
-            <label for="gender">Gender:</label>
-            <select id="gender" required>
-              <option value="">Select Gender</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div>
-            <label for="weight">Weight (kg):</label>
-            <input type="number" id="weight" step="0.1" min="1" required>
-          </div>
-          <div>
-            <label for="height">Height (m):</label>
-            <input type="number" id="height" step="0.01" min="0.01" required>
-          </div>
-          <button type="button" id="calculate">Calculate BMI</button>
-        </form>
-      </div>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-logo">FitnessPlus</div>
+    <ul class="navbar-menu">
+      <li><a href="home.html"><i class="material-icons">home</i> Home</a></li> <!-- Home link -->
+      <li><a href="#"><i class="material-icons">fitness_center</i> Fit Trackers</a></li>
+      <!-- Fit Trackers link (current page) -->
+    </ul>
+  </div>
+  <div class="error-message" id="error-message"></div> <!------- For Appearing error message ------>
+  <div id="success-message" class="success-message"></div> <!------- For Appearing Success message ------>
+  <div class="container">
+    <!-- Workout Plan Section -->
+    <div class="planner-form">
+      <h1 id="h1">Fitness Workout Planner</h1>
+      <form id="workoutForm">
+        <!-- Workout form content here -->
+        <label for="time">Time (in minutes):</label>
+        <input type="number" id="time" name="time" required>
+        <br>
+        <label for="muscle">Muscle:</label>
+        <select id="muscle" name="muscle" required>
+          <option value="">Select Muscle</option>
+          <option value="Chest">Chest</option>
+          <option value="Back">Back</option>
+          <option value="Legs">Legs</option>
+          <option value="Arms">Arms</option>
+          <!-- Add more options as needed -->
+        </select>
+        <br>
+        <label for="location">Location:</label>
+        <select id="location" name="location" required>
+          <option value="">Select Location</option>
+          <option value="Gym">Gym</option>
+          <option value="Home">Home</option>
+          <option value="Outdoors">Outdoors</option>
+          <option value="Fitness Center">Fitness Center</option>
+          <!-- Add more options as needed -->
+        </select>
+        <br>
+        <label for="equipment">Equipment:</label>
+        <select id="equipment" name="equipment" required>
+          <option value="">Select Equipment</option>
+          <option value="Dumbbells">Dumbbells</option>
+          <option value="Resistance Bands">Resistance Bands</option>
+          <option value="Treadmill">Treadmill</option>
+          <option value="Kettlebells">Kettlebells</option>
+          <option value="Jumping Rope">Jumping Rope</option>
+          <!-- Add more options as needed -->
+        </select>
+        <br>
+        <button type="submit">Get Workout Plan</button>
+      </form>
     </div>
 
-    <div>
-      <h1 id="res">Results</h1>
-    </div>
-    <!-- Results Section -->
-    <div class="results">
-      <div class="result-container" id="workoutResult">
-        <h2>Workout Plan</h2>
-        <table id="coolDownTable">
-          <tr>
-            <th>Pre-Exercise</th>
-            <th>Time</th>
-          </tr>
-        </table>
-        
-        <table id="warmUpTable">
-          <tr>
-            <th>Exercise</th>
-            <th>Time</th>
-          </tr>
-        </table>
-  
-        <table id="exercisesTable">
-          <tr>
-            <th>Exercise</th>
-            <th>Sets</th>
-            <th>Reps</th>
-          </tr>
-        </table>
-  
-      </div>
-  
-      <div class="result-container" id="bmiResult">
-        <h2>BMI Result</h2>
-        <p>Your BMI: <span id="bmiValue"></span></p>
-        <p id="bmiCategory"></p>
-      </div>
-    </div>
-  
-    <!-- Loader -->
-    <div class="loader-container" id="loader">
-      <img class="loader-image" src="https://www.clipartmax.com/png/middle/17-175589_weight-lifting-power-training-exercise-healthy-barbell-svg.png" alt="">
+    <!-- BMI Calculator Section -->
+    <div class="bmi-calculator">
+      <h1>BMI Calculator</h1>
+      <form id="bmiForm">
+        <!-- BMI Calculator form content here -->
+        <div>
+          <label for="age">Age:</label>
+          <input type="number" id="age" min="1" required>
+        </div>
+        <div>
+          <label for="gender">Gender:</label>
+          <select id="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="weight">Weight (kg):</label>
+          <input type="number" id="weight" step="0.1" min="1" required>
+        </div>
+        <div>
+          <label for="height">Height (m):</label>
+          <input type="number" id="height" step="0.01" min="0.01" required>
+        </div>
+        <button type="button" id="calculate">Calculate BMI</button>
+      </form>
     </div>
   </div>
 
+  <div>
+    <h1 id="res">Results</h1>
+  </div>
+  <!-- Results Section -->
+  <div class="results">
+    <div class="result-container" id="workoutResult">
+      <h2>Workout Plan</h2>
+      <table id="coolDownTable">
+        <tr>
+          <th>Pre-Exercise</th>
+          <th>Time</th>
+        </tr>
+      </table>
 
-<footer id="footer">
-  <p>FitnessPlus Project #1  &copy; 2023. All rights reserved.</p>
-  <p>Created by Jose & Lito </p>
-</footer>
-    <script src="assets/js/mainscript.js"></script> 
+      <table id="warmUpTable">
+        <tr>
+          <th>Exercise</th>
+          <th>Time</th>
+        </tr>
+      </table>
+
+      <table id="exercisesTable">
+        <tr>
+          <th>Exercise</th>
+          <th>Sets</th>
+          <th>Reps</th>
+        </tr>
+      </table>
+
+    </div>
+
+    <div class="result-container" id="bmiResult">
+      <h2>BMI Result</h2>
+      <p>Your BMI: <span id="bmiValue"></span></p>
+      <p id="bmiCategory"></p>
+    </div>
+  </div>
+
+  <!-- Loader -->
+  <div class="loader-container" id="loader">
+    <img class="loader-image"
+      src="https://www.clipartmax.com/png/middle/17-175589_weight-lifting-power-training-exercise-healthy-barbell-svg.png"
+      alt="">
+  </div>
+  </div>
+
+
+  <footer id="footer">
+    <p>FitnessPlus Project #1 &copy; 2023. All rights reserved.</p>
+    <p>Created by Jose, Lito & Andretta</p>
+  </footer>
+  <script src="assets/js/mainscript.js"></script>
 </body>
+
 </html>

@@ -45,14 +45,5 @@ GitHub - hyperlitz/fitnessplus
 Contribute to hyperlitz/fitnessplus development by creating an account on GitHub. (33 kB)
 https://github.com/hyperlitz/fitnessplus
 
-GitHubGitHub
-GitHub - hyperlitz/fitnessplus
-Contribute to hyperlitz/fitnessplus development by creating an account on GitHub. (33 kB)
-https://github.com/hyperlitz/fitnessplus.git
 
-GitHubGitHub
-hyperlitz - Overview
-hyperlitz has 8 repositories available. Follow their code on GitHub.
-GitHubGitHub
-andrettaj - Overview
-andrettaj has 15 repositories available. Follow their code on GitHub.
+
