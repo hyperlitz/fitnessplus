@@ -240,4 +240,14 @@ tr:hover {
     padding: 10px;
     border-radius: 5px;
     display: none; 
-  }
+}
+#dataInputContainer{
+    display: none;
+}
+#toggleDataButton{
+    margin-top: 3rem;
+    display: block;
+}
+#showDataButton{
+    background: linear-gradient(to right, rgb(35, 109, 138), rgb(58, 94, 105),blue,darkblue,rgb(139, 48, 139));
+}

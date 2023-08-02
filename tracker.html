@@ -4,12 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/tracker.css">
   <title>FitnessPlus|FitnessTracker</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/tracker.css
-    ">
 </head>
-
 <body>
   <!-- Navbar -->
   <div class="navbar">
@@ -28,6 +26,10 @@
       <h1 id="h1">Fitness Workout Planner</h1>
       <form id="workoutForm">
         <!-- Workout form content here -->
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+        </div>    
         <label for="time">Time (in minutes):</label>
         <input type="number" id="time" name="time" required>
         <br>
@@ -71,6 +73,10 @@
       <h1>BMI Calculator</h1>
       <form id="bmiForm">
         <!-- BMI Calculator form content here -->
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+        </div>    
         <div>
           <label for="age">Age:</label>
           <input type="number" id="age" min="1" required>
@@ -128,21 +134,30 @@
 
     </div>
 
-    <div class="result-container" id="bmiResult">
-      <h2>BMI Result</h2>
-      <p>Your BMI: <span id="bmiValue"></span></p>
-      <p id="bmiCategory"></p>
+      <div class="result-container" id="bmiResult">
+        <h2>BMI Result</h2>
+        <p>Your BMI: <span id="bmiValue"></span></p>
+        <p id="bmiCategory"></p>
+      </div>
+    </div>
+
+    <!-- Loader -->
+    <div class="loader-container" id="loader">
+      <img class="loader-image"
+        src="https://www.clipartmax.com/png/middle/17-175589_weight-lifting-power-training-exercise-healthy-barbell-svg.png"
+        alt="spinning barbell">
     </div>
   </div>
-
-  <!-- Loader -->
-  <div class="loader-container" id="loader">
-    <img class="loader-image"
-      src="https://www.clipartmax.com/png/middle/17-175589_weight-lifting-power-training-exercise-healthy-barbell-svg.png"
-      alt="">
+  
+  <!-- Add this div for the toggle and input field -->
+  <div>
+    <button id="toggleDataButton" onclick="toggleDataInput()">Show Data</button>
+      <div id="dataInputContainer">
+        <label for="dataName">Enter Name:</label>
+        <input type="text" id="dataName" required>
+        <button id="showDataButton" onclick="showData()">Enter</button>
+      </div>
   </div>
-  </div>
-
 
   <footer id="footer">
     <p>FitnessPlus Project #1 &copy; 2023. All rights reserved.</p>

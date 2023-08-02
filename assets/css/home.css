@@ -161,6 +161,10 @@ justify-content: center;
     font-weight: bold;
 }
 
+#btn-tracker{
+    text-decoration: none;
+}
+
 .btn:hover{
     color: black;
     background-color: rgb(0, 119, 255);
