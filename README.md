@@ -22,6 +22,8 @@ Fitness Plus is a fitness application that helps you stay on track with your fit
 Check out the live demo of the Fitness Plus app [here](https://hyperlitz.github.io/fitnessplus/).
 ## Repository
 Repository link [here](https://github.com/hyperlitz/fitnessplus).
+## Slide Presentation
+Slides Link [here](https://docs.google.com/presentation/d/190D0EFkJ-l2kaGWu6JTf20toQnn95mZ1P7tRHvhR1XA/edit?usp=sharing).
 ## Installation
 To run the Fitness Plus app locally, follow these steps:
 1. Clone the repository from GitHub:
